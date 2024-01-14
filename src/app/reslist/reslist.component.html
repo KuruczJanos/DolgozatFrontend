@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="reslist.component.css">
+<a routerLink="/app" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary" type="button">Elrejtés</a>
+<router-outlet></router-outlet>
+<table class="table">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Név</th>
+        <th scope="col">Fő</th>
+        <th scope="col">Irányítószám</th>
+        <th scope="col">Cím</th>
+        <th scope="col">Dátum</th>
+    </tr>
+        <tr scope="col" *ngFor="let foglalasok of foglalasok">
+            <td>{{ foglalasok.id }}</td>
+            <td>{{ foglalasok.nev }}</td>
+            <td>{{ foglalasok.fo }}</td>
+            <td>{{ foglalasok.iranyitoszam }}</td>
+            <td>{{ foglalasok.cim }}</td>
+            <td>{{ foglalasok.datum }}</td>
+        </tr>
+    </table>

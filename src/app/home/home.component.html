@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./home.component.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container" id="container">
+    <div class="header">
+        <app-res-add></app-res-add>
+        <h1 class="cim">Szabaduló Szoba</h1>
+        <div class="m-5 d-grid gap-2 col-6 mx-auto">
+            <a routerLink="/reslist" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn btn-primary" type="button">Foglalások listázása</a>    
+            <a href="#" class="btn btn-primary" type="button">Új foglalás felvétele</a>    
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+    <div class="content">
+        <div class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, iste inventore nulla optio officiis repellendus autem maxime asperiores molestias voluptatum odit omnis deserunt eaque totam quaerat pariatur. Voluptatibus, quasi. Aperiam.lorem</div>
+        <div class="table">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="about">Bemutatkozás helyeő</div>
+    </div>
+</div>
+</body>
+</html>
